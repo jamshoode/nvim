@@ -118,7 +118,7 @@ return {
                             format = { enable = false },
                             hint = { enable = true, setType = true },
                         },
-                        ccls = {
+                        clangd = {
                             compileFlags = {
                                 Add = {
                                     "-I/usr/lib/avr/include",
@@ -147,11 +147,11 @@ return {
                 require("lspconfig.ui.windows").default_options = {
                     border = float.border,
                 }
-                require('lspconfig').ccls.setup{
-                    cmd = { "ccls" },
+                require('lspconfig').clangd.setup{
+                    cmd = { "clangd" },
                     root_dir = require('lspconfig').util.root_pattern(".ccls", "compile_commands.json", ".git"),
                     settings = {
-                        ccls = {
+                        clangd = {
                             compileFlags = {
                                 Add = {
                                     "-I/usr/avr/include/",
