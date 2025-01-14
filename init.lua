@@ -1,7 +1,8 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.guicursor = "n-v-i-c:hor30-Cursor"
+-- vim.opt.guicursor = "n-v-i-c:hor30-Cursor"
+vim.opt.guicursor = ""
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -50,6 +51,13 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+
+-- vim.cmd [[
+--   highlight Normal guibg=none
+--   highlight NonText guibg=none
+--   highlight Normal ctermbg=none
+--   highlight NonText ctermbg=none
+-- ]]
 
 
 require("lazy").setup("plugins")
