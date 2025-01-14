@@ -1,7 +1,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = "n-v-i-c:hor30-Cursor"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
